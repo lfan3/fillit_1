@@ -25,7 +25,7 @@ void ma_printf(char *p, ...)
             n = va_arg(ap, int);
             itoa(n, v, 10);
         }
-        for(j=0;j<strlen(v);j++){
+        for(int j=0;j<strlen(v);j++){
          fputc(v[j],stdout);
         }
 

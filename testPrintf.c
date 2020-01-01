@@ -121,6 +121,16 @@ int main()
             et également dans la console\n");
     //printf("%f\n", 1); this is wrong, so need . to recognise if it is floating
 
+    int m;
+    m = printf("%d\n", 150);
+    m = printf("%d\n", 1500);
+    m = printf("%d\n", 1);
+    m = printf("%s\n", "AB");
+    //m = printf("%d\n", "Ab"); wrong
+    m = printf("%.2f\n", 12.34);
+    m = printf("%8.2f\n", 12.34);
+    printf("m is %d\n", m);
+
     /**************special caracters *************************
     
     Séquence d'échappement 	signification
