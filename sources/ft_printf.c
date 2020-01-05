@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "../include/ft_printf.h"
-#include "../include/libft/libft.h"
+
 int ft_printf(char *format, ...)
 {
 
@@ -46,6 +46,17 @@ int ft_printf(char *format, ...)
             format++;            
         }
     }
+    if(head->c_s = 'd')
+    {
+        case_d(va_arg(ap, int));
+    }
+    /*
+    while(head)
+    {
+        printf("info %d\n", head->width);
+        printf("prec %d\n", head->precision);
+        head = head->next;
+    }*/
     va_end(ap);
     return 0;
 }
@@ -53,7 +64,7 @@ int ft_printf(char *format, ...)
 int main()
 {
     int a = 12;
-    ft_printf("zhk %05dabc %.5ddef");
+    ft_printf("%d", -20);
 
   //  ft_printf("%03.4+d0 %-5d", 12, 15 );
   //  ft_printf("%.*u", 5, 15 );

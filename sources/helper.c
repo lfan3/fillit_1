@@ -15,11 +15,6 @@ void	ft_bzero(void *s, size_t n)
 	ft_memset(s, 0, n);
 }
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
 char	*ft_strstr(const char *str, const char *to_find)
 {
 	int	search_i;

@@ -14,6 +14,7 @@ void parsingformat(char *format, t_format **head, unsigned int i, unsigned int p
     new_node->precision = preci;
     new_node->len = get_output_length(f_controler);
     new_node->c_s = format[i];
+    push(head, new_node);
  //   printf("flags %s width %d precision %d len %d cs %c\n",\
             new_node->flags, new_node->width, new_node->precision, new_node->len, new_node->c_s);
 
